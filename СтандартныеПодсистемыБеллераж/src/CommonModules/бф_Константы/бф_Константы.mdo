@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fe919b3c-16b9-4ef6-9760-7f33c329bb43">
+  <name>бф_Константы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с константами (Bellerage)</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

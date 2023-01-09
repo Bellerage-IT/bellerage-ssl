@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b0360481-deab-44c1-bd6f-e5716c2e8ded">
+  <name>МодификацияФорм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Модификация форм</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonModule.бф_СобытияФорм</content>
+  <content>CommonModule.бф_СобытияФормКлиент</content>
+  <content>CommonModule.бф_МодификацияФорм</content>
+  <parentSubsystem>Subsystem.бф_СтандартныеПодсистемы</parentSubsystem>
+</mdclass:Subsystem>

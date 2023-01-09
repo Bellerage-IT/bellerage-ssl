@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1918bfdd-8bc7-4927-9102-fcd83ae6ec05">
+  <name>бф_МодификацияФорм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бф модификация форм</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

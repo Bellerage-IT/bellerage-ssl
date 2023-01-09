@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6da9e07b-f5d3-4a09-9a17-70c1fa6e111a">
+  <name>бф_СтандартныеПодсистемы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стандартные подсистемы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <subsystems>КоннекторХТТП</subsystems>
+  <subsystems>Константы</subsystems>
+  <subsystems>МодификацияФорм</subsystems>
+</mdclass:Subsystem>
