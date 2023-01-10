@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8bfef27-425e-4428-b125-585bfb217b83">
+  <name>ПроцессорыКоллекций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Процессоры коллекций</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>DataProcessor.бф_ПроцессорКоллекций</content>
+  <content>CommonModule.бф_ПроцессорыКоллекций</content>
+  <content>CommonModule.бф_ПроцессорыКоллекцийСлужебный</content>
+  <parentSubsystem>Subsystem.бф_СтандартныеПодсистемы</parentSubsystem>
+</mdclass:Subsystem>

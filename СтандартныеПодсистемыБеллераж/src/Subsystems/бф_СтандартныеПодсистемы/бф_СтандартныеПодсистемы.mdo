@@ -10,4 +10,6 @@
   <subsystems>КоннекторХТТП</subsystems>
   <subsystems>Константы</subsystems>
   <subsystems>МодификацияФорм</subsystems>
+  <subsystems>ПроцессорыКоллекций</subsystems>
+  <subsystems>ХТТП</subsystems>
 </mdclass:Subsystem>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="817028a9-fc09-452d-b10e-7daedf77035d">
+  <name>ХТТП</name>
+  <synonym>
+    <key>ru</key>
+    <value>ХТТП</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>DataProcessor.бф_ПроцессорКоллекций</content>
+  <content>CommonModule.бф_ОбработкаHTTPЗапросов</content>
+  <content>CommonModule.бф_ПроцессорыКоллекций</content>
+  <content>CommonModule.бф_ПроцессорыКоллекцийСлужебный</content>
+  <content>CommonModule.бф_ВосстановлениеXDTO</content>
+  <content>CommonModule.бф_ВосстановлениеXDTOПереопределяемый</content>
+  <content>CommonModule.бф_Кеширование</content>
+  <content>CommonModule.бф_ОбработкаЗапросовПереопределяемый</content>
+  <content>CommonModule.бф_ОбработкаЗапросовПовтИсп</content>
+  <content>CommonModule.бф_ОбщегоНазначенияХТТП</content>
+  <content>CommonModule.бф_СервисыОбщее</content>
+  <content>XDTOPackage.ОбщегоНазначенияХТТП</content>
+  <content>Role.ПолныеПрава</content>
+  <parentSubsystem>Subsystem.бф_СтандартныеПодсистемы</parentSubsystem>
+</mdclass:Subsystem>

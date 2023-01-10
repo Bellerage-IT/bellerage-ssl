@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="83cdd0d2-dd4b-48ce-9e2b-ee695cb8fd7f">
+  <name>бф_ПроцессорыКоллекций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бф процессоры коллекций</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

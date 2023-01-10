@@ -1,0 +1,5 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="https://github.com/Daabramov/1c-http-framework">
+	<valueType name="guid" base="xs:string" length="36">
+		<pattern>[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}</pattern>
+	</valueType>
+</package>
