@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e233e10f-70ea-4c95-9ef7-da0575a03ecc">
+  <name>бф_РегулярныеВыражения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бф регулярные выражения</value>
+  </synonym>
+  <comment>Обертка над RegEx1CAddin</comment>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

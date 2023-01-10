@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e061916-7fe6-40f4-bdea-7f57e27ec230">
+  <name>бф_RegEx</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бф reg ex</value>
+  </synonym>
+  <comment>https://github.com/alexkmbk/RegEx1CAddin</comment>
+  <templateType>AddIn</templateType>
+</mdclass:CommonTemplate>

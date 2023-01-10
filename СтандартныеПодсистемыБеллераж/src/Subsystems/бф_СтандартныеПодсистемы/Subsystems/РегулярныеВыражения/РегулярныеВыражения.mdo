@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b20d3640-94db-45ed-93a9-bf6633f78044">
+  <name>РегулярныеВыражения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регулярные выражения</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonModule.бф_РегулярныеВыражения</content>
+  <content>CommonTemplate.бф_RegEx</content>
+  <parentSubsystem>Subsystem.бф_СтандартныеПодсистемы</parentSubsystem>
+</mdclass:Subsystem>
