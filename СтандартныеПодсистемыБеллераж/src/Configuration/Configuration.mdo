@@ -51,6 +51,7 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.бф_СтандартныеПодсистемы</subsystems>
+  <subsystems>Subsystem.МодельЗапроса</subsystems>
   <commonModules>CommonModule.бф_ВосстановлениеXDTO</commonModules>
   <commonModules>CommonModule.бф_ВосстановлениеXDTOПереопределяемый</commonModules>
   <commonModules>CommonModule.бф_Кеширование</commonModules>
@@ -61,13 +62,16 @@
   <commonModules>CommonModule.бф_ОбработкаHTTPЗапросов</commonModules>
   <commonModules>CommonModule.бф_ОбработкаЗапросовПереопределяемый</commonModules>
   <commonModules>CommonModule.бф_ОбработкаЗапросовПовтИсп</commonModules>
-  <commonModules>CommonModule.бф_ОбщегоНазначенияХТТП</commonModules>
   <commonModules>CommonModule.бф_ПроцессорыКоллекций</commonModules>
   <commonModules>CommonModule.бф_ПроцессорыКоллекцийСлужебный</commonModules>
   <commonModules>CommonModule.бф_СервисыОбщее</commonModules>
   <commonModules>CommonModule.бф_СобытияФорм</commonModules>
   <commonModules>CommonModule.бф_СобытияФормКлиент</commonModules>
+  <commonModules>CommonModule.бф_СхемаЗапроса</commonModules>
+  <commonModules>CommonModule.бф_СхемаЗапросаСлужебный</commonModules>
+  <commonModules>CommonModule.бф_ХТТПСлужебный</commonModules>
   <xDTOPackages>XDTOPackage.ОбщегоНазначенияХТТП</xDTOPackages>
+  <dataProcessors>DataProcessor.бф_МодельЗапроса</dataProcessors>
   <dataProcessors>DataProcessor.бф_ПроцессорКоллекций</dataProcessors>
   <informationRegisters>InformationRegister.бф_ЗначенияКонстант</informationRegisters>
 </mdclass:Configuration>

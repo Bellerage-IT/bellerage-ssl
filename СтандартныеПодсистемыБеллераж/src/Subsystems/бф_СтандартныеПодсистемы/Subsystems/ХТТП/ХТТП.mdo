@@ -6,7 +6,6 @@
     <value>ХТТП</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
-  <content>DataProcessor.бф_ПроцессорКоллекций</content>
   <content>CommonModule.бф_ОбработкаHTTPЗапросов</content>
   <content>CommonModule.бф_ПроцессорыКоллекций</content>
   <content>CommonModule.бф_ПроцессорыКоллекцийСлужебный</content>
@@ -15,9 +14,8 @@
   <content>CommonModule.бф_Кеширование</content>
   <content>CommonModule.бф_ОбработкаЗапросовПереопределяемый</content>
   <content>CommonModule.бф_ОбработкаЗапросовПовтИсп</content>
-  <content>CommonModule.бф_ОбщегоНазначенияХТТП</content>
+  <content>CommonModule.бф_ХТТПСлужебный</content>
   <content>CommonModule.бф_СервисыОбщее</content>
   <content>XDTOPackage.ОбщегоНазначенияХТТП</content>
-  <content>Role.ПолныеПрава</content>
   <parentSubsystem>Subsystem.бф_СтандартныеПодсистемы</parentSubsystem>
 </mdclass:Subsystem>
