@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5812e952-37f3-4d61-8dec-4afc5ed5f609">
+  <name>СтандартныеПодсистемыБеллераж</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стандартные подсистемы беллераж</value>
+  </synonym>
+  <comment>Стандартные подсистемы Bellerage</comment>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="22558159-c983-4f30-bfc6-622c420d885e"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="b0f5158d-0048-43ce-a713-afc07f497660"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="90ffef6a-c516-484b-9f47-651930b67243"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="4c143dc0-e637-42fb-b38b-3f6d2e1eaac2"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="444e5bf4-6070-4908-a897-840b8044a0b5"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="32b7a235-843b-4c4b-a5d4-21c227561af3"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="2b97cf45-77ba-4b67-a20b-fb85d0d0c33e"/>
+  <configurationExtensionCompatibilityMode>8.3.20</configurationExtensionCompatibilityMode>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <vendor>Bellerage</vendor>
+  <version>1.0.0.1</version>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <copyright>
+    <key>ru</key>
+    <value>© 2023 Bellerage. All rights reserved</value>
+  </copyright>
+  <vendorInformationAddress>
+    <key>ru</key>
+    <value>http://www.bellerage.com/</value>
+  </vendorInformationAddress>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <modalityUseMode>DontUse</modalityUseMode>
+  <synchronousPlatformExtensionAndAddInCallUseMode>UseWithWarnings</synchronousPlatformExtensionAndAddInCallUseMode>
+  <compatibilityMode>8.3.20</compatibilityMode>
+  <languages uuid="463fa4e2-0433-4cd5-8179-7be01d8079bb">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.бф_СтандартныеПодсистемы</subsystems>
+  <commonTemplates>CommonTemplate.бф_RegEx</commonTemplates>
+  <commonModules>CommonModule.бф_ВосстановлениеXDTO</commonModules>
+  <commonModules>CommonModule.бф_ВосстановлениеXDTOПереопределяемый</commonModules>
+  <commonModules>CommonModule.бф_Кеширование</commonModules>
+  <commonModules>CommonModule.бф_КоннекторХТТП</commonModules>
+  <commonModules>CommonModule.бф_Константы</commonModules>
+  <commonModules>CommonModule.бф_КонстантыПовтИсп</commonModules>
+  <commonModules>CommonModule.бф_МодификацияФорм</commonModules>
+  <commonModules>CommonModule.бф_ОбработкаHTTPЗапросов</commonModules>
+  <commonModules>CommonModule.бф_ОбработкаЗапросовПереопределяемый</commonModules>
+  <commonModules>CommonModule.бф_ОбработкаЗапросовПовтИсп</commonModules>
+  <commonModules>CommonModule.бф_ПроцессорыКоллекций</commonModules>
+  <commonModules>CommonModule.бф_ПроцессорыКоллекцийСлужебный</commonModules>
+  <commonModules>CommonModule.бф_РегулярныеВыражения</commonModules>
+  <commonModules>CommonModule.бф_СервисыОбщее</commonModules>
+  <commonModules>CommonModule.бф_СобытияФорм</commonModules>
+  <commonModules>CommonModule.бф_СобытияФормКлиент</commonModules>
+  <commonModules>CommonModule.бф_СхемаЗапроса</commonModules>
+  <commonModules>CommonModule.бф_СхемаЗапросаСлужебный</commonModules>
+  <commonModules>CommonModule.бф_ХТТПСлужебный</commonModules>
+  <xDTOPackages>XDTOPackage.ОбщегоНазначенияХТТП</xDTOPackages>
+  <dataProcessors>DataProcessor.бф_МодельЗапроса</dataProcessors>
+  <dataProcessors>DataProcessor.бф_ПроцессорКоллекций</dataProcessors>
+  <informationRegisters>InformationRegister.бф_ЗначенияКонстант</informationRegisters>
+</mdclass:Configuration>

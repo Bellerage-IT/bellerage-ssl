@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2c752259-f7cc-4b43-9d06-7f5f1cc394b5">
+  <name>тесты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тесты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonModule.тест_КоннекторХТТП</content>
+  <content>CommonModule.тест_ПроцессорКоллекций</content>
+</mdclass:Subsystem>
