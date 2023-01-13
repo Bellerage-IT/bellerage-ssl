@@ -1,0 +1,442 @@
+[
+{
+"ruleId": "Deprecated method",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 2
+},
+{
+"ruleId": "Deprecated property",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 2
+},
+{
+"ruleId": "Function should return value",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "No intersection between expected types (%1) and expression types (%1)",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "Not allowed assign to form attribute value of type %1",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "Objects of this type cannot be created by NEW operator",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "Possible expression isn%1t collection",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "Possible wrong string literal content",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "Property (method) of object is not defined",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "Record manager should not be used for subordinate recorder",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "Return value type %1 that has different environment than calling context",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl. В секции параметров документирующего комментария пропущено определение параметра",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl. Документирующий комментарий содежрит секцию возвращаемого значения для процедуры",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl. Многострочное описание документирующего комментария содержит определение параметра",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl. Многострочное описание документирующего комментария содержит определение поля",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl. Поле документирующего комментария имеет описание типа",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl. Поле документирующего комментария использует объявление сложного типа вместо ссылки на тип",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl. Поле документирующего комментария не имеет определения типа",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl. Поле документирующего комментария является корректным именем",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl. Проверка ОбменДанными.Загрузка в обработчике события",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl. Секция возвращаемого значения документирующего комментария для экспортной функции",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl. Секция возвращаемого значения документирующего комментария содержит корректные типы",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl. Секция возвращаемого значения функции-конструктора данных",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl. Ссылка документирующего комментария на существующий объект",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl. Тип коллекций в документирующем комментарии содержит тип элемента коллекции",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Всегда использовать директивы компиляции в модуле формы",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Вызов Заблокировать() находится вне попытки",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Вызываемый тип пересекается с типом параметра",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Запрос в цикле",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Использован не рекомендованный метод РольДоступна",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Использование булевого параметра обработчика события",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Использование конструкции Новый Цвет",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Использование не рекомендуемых методов",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Конструкция Попытка...Исключение...КонецПопытки не содержит кода в исключении",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Метод в объекте не найден",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Метод содержит слишком много параметров",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Неиспользуемый метод",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.НСтр формат строкового литерала",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Область пустая",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Ограничения на использование экспортных процедур и функций в модуле команд и форм",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Описание оповещения на серверную процедуру",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Определение типа документирующего комментария",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Параметр метода имеет тип",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Переменная имеет тип значения",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Переменная не используется или не проинициализирована",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Программный вызов обработчика события формы",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Пустой метод",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Свойство объекта имеет тип возвращаемого значения",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Типизация значений в конструкторе структуры",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "style.bsl.Утверждение меняет тип",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "This statement might never be executed because %1 statement was found earlier",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "Too many actual parameters for type(s)",
+"message": "",
+"filePath": "",
+"severity": "CRITICAL",
+"type": "BUG",
+"effortMinutes": 5
+},
+{
+"ruleId": "Transfering object of type %1 between client and server is not allowed",
+"message": "",
+"filePath": "",
+"severity": "MINOR",
+"type": "CODE_SMELL",
+"effortMinutes": 5
+},
+{
+"ruleId": "Unsupported operator",
+"message": "",
+"filePath": "",
+"severity": "CRITICAL",
+"type": "BUG",
+"effortMinutes": 5
+},
+{
+"ruleId": "Variable %1 is not defined",
+"message": "",
+"filePath": "",
+"severity": "CRITICAL",
+"type": "BUG",
+"effortMinutes": 5
+}
+]

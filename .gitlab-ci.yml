@@ -1,0 +1,120 @@
+stages:
+  - edt
+  - convert_edt_validate
+  - sonar
+
+variables:
+  PATH_SRC: "src/cf/"
+  SONAR_SCANNER_OPTS: "-Xmx5g -Dfile.encoding=UTF-8 -Duser.language=ru"
+  RING_OPTS: "-Xmx8g -Dfile.encoding=UTF-8 -Duser.language=ru"
+  EDT_VERSION: "2022.1.3"
+  EDT_VALIDATION_RESULT: ".build/edt-validate-result.tsv"
+  EDT_VALIDATION_JSON: ".build/edt-validate-result.json"
+  GENERIC_ISSUE_SETTINGS_JSON: "generic-issue-settings.json"
+
+edt:convertation-validation:
+  image:
+    name: "registry.bellerage.com/edt-editing-plugin:$EDT_VERSION"
+  artifacts:
+    name: "$CI_JOB_NAME"
+    expire_in: 3 days
+    paths:
+      - .build/conf-format/
+      - $EDT_VALIDATION_RESULT
+  script:
+    - ring edt@$EDT_VERSION workspace export --project $PWD/$PATH_SRC --workspace-location $PWD/.build/EDT_WS/ --configuration-files $PWD/.build/conf-format/
+    - rm -f $EDT_VALIDATION_RESULT
+    - ring edt workspace validate --file $PWD/$EDT_VALIDATION_RESULT --workspace-location $PWD/.build/EDT_WS/ --project-list $PWD/$PATH_SRC
+  stage: edt
+  tags:
+    - docker
+  only:
+    - master
+    - develop
+    - merge_requests
+
+oscript:convert-edt-validate-result: 
+  image:
+    name: "registry.bellerage.com/oscript-jdk"
+  variables:
+    SRC: "src/cf/src"
+    GENERIC_ISSUE_JSON: $EDT_VALIDATION_JSON
+  artifacts:
+    name: "$CI_JOB_NAME"
+    paths:
+      - $EDT_VALIDATION_JSON
+  dependencies:
+    - edt:convertation-validation
+  script:
+    - stebi c --UseRelativePaths --ObjectErrors
+    - stebi t
+  stage: convert_edt_validate
+  tags:
+    - docker
+  only:
+    - master
+    - develop
+    - merge_requests
+  
+sonar:check-branch:
+  image:
+    name: registry.bellerage.com/devops/sonar-scanner-cli
+    entrypoint: [""]
+  stage: sonar
+  variables:
+    SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"  # Defines the location of the analysis task cache
+    GIT_DEPTH: 0  # Tells git to fetch all the branches of the project, required by the analysis task
+    GIT_STRATEGY: clone # clone entire repo instead of reusing workspace
+  cache:
+    key: "${CI_JOB_NAME}"
+    paths:
+      - .sonar/cache
+  allow_failure: true
+  dependencies:
+    - oscript:convert-edt-validate-result
+  script:
+    - export PROJECT_VERSION="$(grep -Po1 "<version>\K.*(?=<\/version>)" ${PATH_SRC}src/Configuration/Configuration.mdo)"
+    - echo $PROJECT_VERSION
+    - sonar-scanner
+        -D"sonar.host.url=$SONAR_SERVER"
+        -D"sonar.projectVersion=$PROJECT_VERSION"
+        -D"sonar.login=$SONAR_LOGIN"
+        -D"sonar.branch.name=$CI_COMMIT_BRANCH"
+        -D"sonar.externalIssuesReportPaths=$EDT_VALIDATION_JSON"
+  only:
+    - master
+    - develop
+  tags:
+    - docker
+
+sonar:check-MR:
+  image:
+    name: registry.bellerage.com/devops/sonar-scanner-cli
+    entrypoint: [""]
+  stage: sonar
+  variables:
+    SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"  # Defines the location of the analysis task cache
+    GIT_DEPTH: 0  # Tells git to fetch all the branches of the project, required by the analysis task
+    GIT_STRATEGY: clone # clone entire repo instead of reusing workspace
+  cache:
+    key: "${CI_JOB_NAME}"
+    paths:
+      - .sonar/cache
+  allow_failure: true
+  dependencies:
+    - oscript:convert-edt-validate-result
+  script:
+    - export PROJECT_VERSION="$(grep -Po1 "<version>\K.*(?=<\/version>)" ${PATH_SRC}src/Configuration/Configuration.mdo)"
+    - echo $PROJECT_VERSION
+    - sonar-scanner
+        -D"sonar.host.url=$SONAR_SERVER"
+        -D"sonar.projectVersion=$PROJECT_VERSION"
+        -D"sonar.login=$SONAR_LOGIN"
+        -D"sonar.pullrequest.key=$CI_MERGE_REQUEST_IID"
+        -D"sonar.pullrequest.branch=$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME"
+        -D"sonar.pullrequest.base=$CI_MERGE_REQUEST_TARGET_BRANCH_NAME"
+        -D"sonar.externalIssuesReportPaths=$EDT_VALIDATION_JSON"
+  only:
+    - merge_requests         
+  tags:
+    - docker
