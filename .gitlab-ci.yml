@@ -11,6 +11,8 @@ variables:
   EDT_VALIDATION_RESULT: ".build/edt-validate-result.tsv"
   EDT_VALIDATION_JSON: ".build/edt-validate-result.json"
   GENERIC_ISSUE_SETTINGS_JSON: "generic-issue-settings.json"
+  SONAR_TOKEN: "$SONAR_TOKEN"
+  SONAR_HOST_URL: "$SONAR_HOST_URL"
 
 edt:convertation-validation:
   image:
@@ -76,9 +78,7 @@ sonar:check-branch:
     - export PROJECT_VERSION="$(grep -Po1 "<version>\K.*(?=<\/version>)" ${PATH_SRC}src/Configuration/Configuration.mdo)"
     - echo $PROJECT_VERSION
     - sonar-scanner
-        -D"sonar.host.url=$SONAR_SERVER"
         -D"sonar.projectVersion=$PROJECT_VERSION"
-        -D"sonar.login=$SONAR_LOGIN"
         -D"sonar.branch.name=$CI_COMMIT_BRANCH"
         -D"sonar.externalIssuesReportPaths=$EDT_VALIDATION_JSON"
   only:
@@ -107,9 +107,7 @@ sonar:check-MR:
     - export PROJECT_VERSION="$(grep -Po1 "<version>\K.*(?=<\/version>)" ${PATH_SRC}src/Configuration/Configuration.mdo)"
     - echo $PROJECT_VERSION
     - sonar-scanner
-        -D"sonar.host.url=$SONAR_SERVER"
         -D"sonar.projectVersion=$PROJECT_VERSION"
-        -D"sonar.login=$SONAR_LOGIN"
         -D"sonar.pullrequest.key=$CI_MERGE_REQUEST_IID"
         -D"sonar.pullrequest.branch=$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME"
         -D"sonar.pullrequest.base=$CI_MERGE_REQUEST_TARGET_BRANCH_NAME"

@@ -11,6 +11,7 @@
   <subsystems>Константы</subsystems>
   <subsystems>МодельЗапроса</subsystems>
   <subsystems>МодификацияФорм</subsystems>
+  <subsystems>Пагинация</subsystems>
   <subsystems>ПроцессорыКоллекций</subsystems>
   <subsystems>РегулярныеВыражения</subsystems>
   <subsystems>ХТТП</subsystems>

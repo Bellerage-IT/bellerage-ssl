@@ -58,18 +58,19 @@
   <commonModules>CommonModule.бф_КоннекторХТТП</commonModules>
   <commonModules>CommonModule.бф_Константы</commonModules>
   <commonModules>CommonModule.бф_КонстантыПовтИсп</commonModules>
+  <commonModules>CommonModule.бф_МодельЗапроса</commonModules>
+  <commonModules>CommonModule.бф_МодельЗапросаСлужебный</commonModules>
   <commonModules>CommonModule.бф_МодификацияФорм</commonModules>
   <commonModules>CommonModule.бф_ОбработкаHTTPЗапросов</commonModules>
   <commonModules>CommonModule.бф_ОбработкаЗапросовПереопределяемый</commonModules>
   <commonModules>CommonModule.бф_ОбработкаЗапросовПовтИсп</commonModules>
+  <commonModules>CommonModule.бф_Пагинация</commonModules>
   <commonModules>CommonModule.бф_ПроцессорыКоллекций</commonModules>
   <commonModules>CommonModule.бф_ПроцессорыКоллекцийСлужебный</commonModules>
   <commonModules>CommonModule.бф_РегулярныеВыражения</commonModules>
   <commonModules>CommonModule.бф_СервисыОбщее</commonModules>
   <commonModules>CommonModule.бф_СобытияФорм</commonModules>
   <commonModules>CommonModule.бф_СобытияФормКлиент</commonModules>
-  <commonModules>CommonModule.бф_СхемаЗапроса</commonModules>
-  <commonModules>CommonModule.бф_СхемаЗапросаСлужебный</commonModules>
   <commonModules>CommonModule.бф_ХТТПСлужебный</commonModules>
   <xDTOPackages>XDTOPackage.ОбщегоНазначенияХТТП</xDTOPackages>
   <dataProcessors>DataProcessor.бф_МодельЗапроса</dataProcessors>

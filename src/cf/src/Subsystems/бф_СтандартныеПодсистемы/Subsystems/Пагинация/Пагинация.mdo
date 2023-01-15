@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a1e36a80-3b83-4680-87ec-f7255beb852c">
+  <name>Пагинация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пагинация</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonModule.бф_Пагинация</content>
+  <parentSubsystem>Subsystem.бф_СтандартныеПодсистемы</parentSubsystem>
+</mdclass:Subsystem>

@@ -50,7 +50,7 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
-  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
   <mainFilterOnPeriod>true</mainFilterOnPeriod>
   <dataLockControlMode>Managed</dataLockControlMode>
   <enableTotalsSliceLast>true</enableTotalsSliceLast>

@@ -40,6 +40,7 @@
   <commonModules>CommonModule.МокитоСлужебный</commonModules>
   <commonModules>CommonModule.СтроковыеФункцииКлиентСервер</commonModules>
   <commonModules>CommonModule.тест_КоннекторХТТП</commonModules>
+  <commonModules>CommonModule.тест_Пагинация</commonModules>
   <commonModules>CommonModule.тест_ПроцессорКоллекций</commonModules>
   <commonModules>CommonModule.ЮТест</commonModules>
   <commonModules>CommonModule.ЮТИсполнитель</commonModules>
@@ -69,4 +70,5 @@
   <commonModules>CommonModule.ЮТЧитатель</commonModules>
   <commonModules>CommonModule.ЮТЧитательСервер</commonModules>
   <dataProcessors>DataProcessor.ЮТЮнитТесты</dataProcessors>
+  <informationRegisters>InformationRegister.бф_ЗначенияКонстант</informationRegisters>
 </mdclass:Configuration>
