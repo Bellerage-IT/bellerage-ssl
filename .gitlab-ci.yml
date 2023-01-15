@@ -1,10 +1,12 @@
 stages:
   - edt
+  # - tests
   - convert_edt_validate
   - sonar
 
 variables:
   PATH_SRC: "src/cf/"
+  PATH_SRC_YAXUNIT: "src/cfe/yaxunit"
   SONAR_SCANNER_OPTS: "-Xmx5g -Dfile.encoding=UTF-8 -Duser.language=ru"
   RING_OPTS: "-Xmx8g -Dfile.encoding=UTF-8 -Duser.language=ru"
   EDT_VERSION: "2022.1.3"
@@ -22,7 +24,8 @@ edt:convertation-validation:
       - .build/conf-format/
       - $EDT_VALIDATION_RESULT
   script:
-    - ring edt@$EDT_VERSION workspace export --project $PWD/$PATH_SRC --workspace-location $PWD/.build/EDT_WS/ --configuration-files $PWD/.build/conf-format/
+    - ring edt@$EDT_VERSION workspace export --project $PWD/$PATH_SRC --workspace-location $PWD/.build/EDT_WS/cf --configuration-files $PWD/.build/conf-format/cf
+    - ring edt@$EDT_VERSION workspace export --project $PWD/$PATH_SRC_YAXUNIT --workspace-location $PWD/.build/EDT_WS/yaxunit --configuration-files $PWD/.build/conf-format/yaxunit
     - rm -f $EDT_VALIDATION_RESULT
     - ring edt workspace validate --file $PWD/$EDT_VALIDATION_RESULT --workspace-location $PWD/.build/EDT_WS/ --project-list $PWD/$PATH_SRC
   stage: edt
@@ -55,7 +58,21 @@ oscript:convert-edt-validate-result:
     - master
     - develop
     - merge_requests
-  
+
+# test:yaxunit:
+#   stage: tests
+#   needs: 
+#     - edt:convertation-validation
+#   script:
+#     - echo "123"
+#   only:
+#     - master
+#     - develop
+#     - merge_requests
+#   tags:
+#     - docker
+
+
 sonar:check-branch:
   image:
     name: registry.bellerage.com/devops/sonar-scanner-cli
