@@ -11,7 +11,7 @@ src/.project
 /ci4onec
 /spec/build/ib
 /tys
-/.build
+/build
 
 autotest.json
 VBParams.json

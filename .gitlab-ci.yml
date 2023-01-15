@@ -1,6 +1,6 @@
 stages:
   - edt
-  # - tests
+  - tests
   - convert_edt_validate
   - sonar
 
@@ -10,8 +10,8 @@ variables:
   SONAR_SCANNER_OPTS: "-Xmx5g -Dfile.encoding=UTF-8 -Duser.language=ru"
   RING_OPTS: "-Xmx8g -Dfile.encoding=UTF-8 -Duser.language=ru"
   EDT_VERSION: "2022.1.3"
-  EDT_VALIDATION_RESULT: ".build/edt-validate-result.tsv"
-  EDT_VALIDATION_JSON: ".build/edt-validate-result.json"
+  EDT_VALIDATION_RESULT: "build/edt-validate-result.tsv"
+  EDT_VALIDATION_JSON: "build/edt-validate-result.json"
   GENERIC_ISSUE_SETTINGS_JSON: "generic-issue-settings.json"
 
 edt:convertation-validation:
@@ -21,13 +21,13 @@ edt:convertation-validation:
     name: "$CI_JOB_NAME"
     expire_in: 3 days
     paths:
-      - .build/conf-format/
+      - build/conf-format/
       - $EDT_VALIDATION_RESULT
   script:
-    - ring edt@$EDT_VERSION workspace export --project $PWD/$PATH_SRC --workspace-location $PWD/.build/EDT_WS/cf --configuration-files $PWD/.build/conf-format/cf
-    - ring edt@$EDT_VERSION workspace export --project $PWD/$PATH_SRC_YAXUNIT --workspace-location $PWD/.build/EDT_WS/yaxunit --configuration-files $PWD/.build/conf-format/yaxunit
+    - ring edt@$EDT_VERSION workspace export --project $PWD/$PATH_SRC --workspace-location $PWD/build/EDT_WS/cf --configuration-files $PWD/build/conf-format/cf
+    - ring edt@$EDT_VERSION workspace export --project $PWD/$PATH_SRC_YAXUNIT --workspace-location $PWD/build/EDT_WS/yaxunit --configuration-files $PWD/build/conf-format/yaxunit
     - rm -f $EDT_VALIDATION_RESULT
-    - ring edt workspace validate --file $PWD/$EDT_VALIDATION_RESULT --workspace-location $PWD/.build/EDT_WS/ --project-list $PWD/$PATH_SRC
+    - ring edt workspace validate --file $PWD/$EDT_VALIDATION_RESULT --workspace-location $PWD/build/EDT_WS/cf --project-list $PWD/$PATH_SRC
   stage: edt
   tags:
     - docker
@@ -59,18 +59,27 @@ oscript:convert-edt-validate-result:
     - develop
     - merge_requests
 
-# test:yaxunit:
-#   stage: tests
-#   needs: 
-#     - edt:convertation-validation
-#   script:
-#     - echo "123"
-#   only:
-#     - master
-#     - develop
-#     - merge_requests
-#   tags:
-#     - docker
+test:yaxunit:
+  stage: tests
+  needs: 
+    - edt:convertation-validation
+  script:
+    - vrunner init-dev --src "$PWD/build/conf-format/cf"
+    - vrunner compileexttocfe --src "$PWD/build/conf-format/yaxunit" -o build/yaxunit.cfe
+    - vrunner run --execute '$runnerRoot/epf/ЗагрузитьРасширениеВРежимеПредприятия.epf' --command "Путь=build/yaxunit.cfe;Имя=yaxunit;ОтключитьЛогикуНачалаРаботыСистемы;ЗавершитьРаботуСистемы"
+    - vrunner run --command 'RunUnitTests=$workspaceRoot/yaxunit.json'
+  artifacts:
+    when: always
+    paths:
+      - build/yaxunit-jUnit-result.xml
+    reports:
+      junit: build/yaxunit-jUnit-result.xml
+  only:
+    - master
+    - develop
+    - merge_requests
+  tags:
+    - 1c
 
 
 sonar:check-branch:

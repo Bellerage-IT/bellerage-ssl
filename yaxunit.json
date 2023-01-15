@@ -1,0 +1,5 @@
+{
+    "reportFormat": "jUnit",
+    "closeAfterTests": true,
+    "reportPath": "build\\yaxunit-jUnit-result.xml"
+}
