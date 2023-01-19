@@ -11,9 +11,10 @@
   <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="4fb22a5b-2d3a-445e-b9c7-b51a4e59f82a"/>
   <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="d26a61dd-a7a6-44b9-b131-be84fcf8c021"/>
   <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="8339b2da-95e3-48c0-b355-f1f6179cebb2"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="706960e0-9892-4fb1-9157-4b2e9635bfbb"/>
   <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
   <namePrefix>ЮТ</namePrefix>
-  <configurationExtensionCompatibilityMode>8.3.10</configurationExtensionCompatibilityMode>
+  <configurationExtensionCompatibilityMode>8.3.20</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>AddOn</configurationExtensionPurpose>
   <scriptVariant>Russian</scriptVariant>
   <version>22.11.0</version>
@@ -39,9 +40,6 @@
   <commonModules>CommonModule.МокитоПроверки</commonModules>
   <commonModules>CommonModule.МокитоСлужебный</commonModules>
   <commonModules>CommonModule.СтроковыеФункцииКлиентСервер</commonModules>
-  <commonModules>CommonModule.тест_КоннекторХТТП</commonModules>
-  <commonModules>CommonModule.тест_Пагинация</commonModules>
-  <commonModules>CommonModule.тест_ПроцессорКоллекций</commonModules>
   <commonModules>CommonModule.ЮТест</commonModules>
   <commonModules>CommonModule.ЮТИсполнитель</commonModules>
   <commonModules>CommonModule.ЮТИсполнительСервер</commonModules>
@@ -69,6 +67,10 @@
   <commonModules>CommonModule.ЮТФильтрация</commonModules>
   <commonModules>CommonModule.ЮТЧитатель</commonModules>
   <commonModules>CommonModule.ЮТЧитательСервер</commonModules>
+  <commonModules>CommonModule.тест_КоннекторХТТП</commonModules>
+  <commonModules>CommonModule.тест_Пагинация</commonModules>
+  <commonModules>CommonModule.тест_ПроцессорКоллекций</commonModules>
+  <catalogs>Catalog.тест_Справочник</catalogs>
   <dataProcessors>DataProcessor.ЮТЮнитТесты</dataProcessors>
-  <informationRegisters>InformationRegister.бф_ЗначенияКонстант</informationRegisters>
+  <informationRegisters>InformationRegister.тест_РегистрДляПагинации</informationRegisters>
 </mdclass:Configuration>

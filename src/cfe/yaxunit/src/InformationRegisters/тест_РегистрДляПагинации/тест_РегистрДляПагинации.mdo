@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e1a2fb1c-60b8-454d-b984-14964545247b">
+  <producedTypes>
+    <selectionType typeId="a340183d-6873-42a1-9be1-79ac0109763c" valueTypeId="de88b6d7-5b30-4610-b10b-eea704818ac2"/>
+    <listType typeId="c6e35468-bb92-4645-b83c-c2722f4d5382" valueTypeId="ad16556b-2b47-49de-906b-c0613903ba4c"/>
+    <managerType typeId="0f8e5fc7-b92a-4337-a2eb-e1f9500130c9" valueTypeId="66c9baff-13a1-4e81-94cb-0bf3da605e79"/>
+    <recordSetType typeId="cb39d2b0-79c9-409f-8611-cf00f2561191" valueTypeId="65010b7b-2185-47bf-b8da-2c90168ff951"/>
+    <recordKeyType typeId="2c0d5f9a-7986-4c9d-9964-3eeac86c0778" valueTypeId="9b5ee842-4689-4d20-83c5-013a602ca683"/>
+    <recordType typeId="9878d526-1f12-4c0f-8eac-d2b5a94b6c9a" valueTypeId="ea318266-52c0-4d59-baff-506c1add9b14"/>
+    <recordManagerType typeId="7d1a5e9a-d931-4c37-a8eb-782afbd28ced" valueTypeId="a9bbdb21-2371-4b1a-be64-f6fc8cf86b0b"/>
+  </producedTypes>
+  <name>тест_РегистрДляПагинации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тест регистр для пагинации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c72614ad-4f72-4ef6-8106-091919bb9936">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+      <types>String</types>
+      <types>Date</types>
+      <types>Number</types>
+      <types>EnumRef</types>
+      <types>ChartOfCharacteristicTypesRef</types>
+      <types>ChartOfAccountsRef</types>
+      <types>CatalogRef</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="8170f11b-395b-4b76-8456-d8a7e8306725">
+    <name>ДатаУстановки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата установки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8dfb2a1f-f171-4834-846d-38d1ff8a0793">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f617c4f3-cb98-4b6d-a551-7709af2134ba">
+    <name>Справочник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.тест_Справочник</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="52743cb5-8251-4ae2-8ec3-3f91a391adc9">
+    <name>Ключ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
