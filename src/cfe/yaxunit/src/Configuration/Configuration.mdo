@@ -17,7 +17,7 @@
   <configurationExtensionCompatibilityMode>8.3.20</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>AddOn</configurationExtensionPurpose>
   <scriptVariant>Russian</scriptVariant>
-  <version>22.11.0</version>
+  <version>23.04.1</version>
   <languages uuid="b8fdae66-bc14-47de-9a8d-e0323e0d9ce8">
     <name>Русский</name>
     <objectBelonging>Adopted</objectBelonging>
@@ -35,42 +35,64 @@
   <commonPictures>CommonPicture.ЮТУпал</commonPictures>
   <commonPictures>CommonPicture.ЮТУспешно</commonPictures>
   <commonPictures>CommonPicture.ЮТЭлементыТестов</commonPictures>
+  <commonTemplates>CommonTemplate.ЮТОписаниеМетаданных</commonTemplates>
+  <commonModules>CommonModule.бф_СервисыОбщееПереопределяемый</commonModules>
   <commonModules>CommonModule.Мокито</commonModules>
   <commonModules>CommonModule.МокитоОбучение</commonModules>
   <commonModules>CommonModule.МокитоПроверки</commonModules>
   <commonModules>CommonModule.МокитоСлужебный</commonModules>
-  <commonModules>CommonModule.СтроковыеФункцииКлиентСервер</commonModules>
+  <commonModules>CommonModule.ОМ_бф_КоннекторХТТП</commonModules>
+  <commonModules>CommonModule.ОМ_бф_ОбработкаHTTPЗапросов</commonModules>
+  <commonModules>CommonModule.ОМ_бф_Пагинация</commonModules>
+  <commonModules>CommonModule.ОМ_бф_ПроцессорыКоллекций</commonModules>
+  <commonModules>CommonModule.ОМ_бф_РегулярныеВыраженияКлиентСервер</commonModules>
+  <commonModules>CommonModule.ОМ_бф_СервисыОбщее</commonModules>
+  <commonModules>CommonModule.тест_КонтроллерХТТП</commonModules>
   <commonModules>CommonModule.ЮТест</commonModules>
-  <commonModules>CommonModule.ЮТИсполнитель</commonModules>
+  <commonModules>CommonModule.ЮТИсполнительКлиент</commonModules>
+  <commonModules>CommonModule.ЮТИсполнительКлиентСервер</commonModules>
   <commonModules>CommonModule.ЮТИсполнительСервер</commonModules>
   <commonModules>CommonModule.ЮТКонструкторВариантов</commonModules>
+  <commonModules>CommonModule.ЮТКонструкторТестовыхДанных</commonModules>
   <commonModules>CommonModule.ЮТКонтекст</commonModules>
   <commonModules>CommonModule.ЮТКонтекстКлиент</commonModules>
   <commonModules>CommonModule.ЮТКонтекстСервер</commonModules>
   <commonModules>CommonModule.ЮТКонтекстТеста</commonModules>
+  <commonModules>CommonModule.ЮТЛогирование</commonModules>
+  <commonModules>CommonModule.ЮТЛогированиеВызовСервера</commonModules>
+  <commonModules>CommonModule.ЮТМетаданные</commonModules>
+  <commonModules>CommonModule.ЮТМетаданныеПовтИсп</commonModules>
   <commonModules>CommonModule.ЮТМетаданныеСервер</commonModules>
+  <commonModules>CommonModule.ЮТНастройкиВыполнения</commonModules>
   <commonModules>CommonModule.ЮТОбщий</commonModules>
   <commonModules>CommonModule.ЮТОбщийВызовСервера</commonModules>
   <commonModules>CommonModule.ЮТОтчет</commonModules>
   <commonModules>CommonModule.ЮТОтчетJSON</commonModules>
   <commonModules>CommonModule.ЮТОтчетJUnit</commonModules>
-  <commonModules>CommonModule.ЮТПараметры</commonModules>
+  <commonModules>CommonModule.ЮТПараметрыЗапуска</commonModules>
   <commonModules>CommonModule.ЮТПовторногоИспользования</commonModules>
+  <commonModules>CommonModule.ЮТПредикаты</commonModules>
+  <commonModules>CommonModule.ЮТПредикатыКлиентСервер</commonModules>
   <commonModules>CommonModule.ЮТРасширения</commonModules>
   <commonModules>CommonModule.ЮТРегистрацияОшибок</commonModules>
   <commonModules>CommonModule.ЮТСобытия</commonModules>
+  <commonModules>CommonModule.ЮТСравнениеКлиентСервер</commonModules>
+  <commonModules>CommonModule.ЮТСравнениеСервер</commonModules>
   <commonModules>CommonModule.ЮТТестовыеДанные</commonModules>
   <commonModules>CommonModule.ЮТТестовыеДанныеВызовСервера</commonModules>
+  <commonModules>CommonModule.ЮТТестовыеДанныеСлужебный</commonModules>
   <commonModules>CommonModule.ЮТТесты</commonModules>
   <commonModules>CommonModule.ЮТУтверждения</commonModules>
   <commonModules>CommonModule.ЮТФабрика</commonModules>
+  <commonModules>CommonModule.ЮТФайлы</commonModules>
   <commonModules>CommonModule.ЮТФильтрация</commonModules>
   <commonModules>CommonModule.ЮТЧитатель</commonModules>
   <commonModules>CommonModule.ЮТЧитательСервер</commonModules>
-  <commonModules>CommonModule.тест_КоннекторХТТП</commonModules>
-  <commonModules>CommonModule.тест_Пагинация</commonModules>
-  <commonModules>CommonModule.тест_ПроцессорКоллекций</commonModules>
+  <commonModules>CommonModule.ОМ_бф_МодельЗапроса</commonModules>
+  <xDTOPackages>XDTOPackage.тест_http_framework</xDTOPackages>
+  <httpServices>HTTPService.тест_ХТТПСервис</httpServices>
   <catalogs>Catalog.тест_Справочник</catalogs>
+  <dataProcessors>DataProcessor.ЮТHTTPСервисЗапрос</dataProcessors>
   <dataProcessors>DataProcessor.ЮТЮнитТесты</dataProcessors>
   <informationRegisters>InformationRegister.тест_РегистрДляПагинации</informationRegisters>
 </mdclass:Configuration>

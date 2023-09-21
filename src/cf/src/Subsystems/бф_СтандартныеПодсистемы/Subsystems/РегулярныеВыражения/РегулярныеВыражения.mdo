@@ -7,7 +7,8 @@
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
-  <content>CommonModule.бф_РегулярныеВыражения</content>
+  <content>CommonModule.бф_РегулярныеВыраженияКлиентСервер</content>
   <content>CommonTemplate.бф_RegEx</content>
+  <content>CommonTemplate.бф_RegExBrowsers</content>
   <parentSubsystem>Subsystem.бф_СтандартныеПодсистемы</parentSubsystem>
 </mdclass:Subsystem>

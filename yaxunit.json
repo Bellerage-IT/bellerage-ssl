@@ -1,5 +1,6 @@
 {
     "reportFormat": "jUnit",
     "closeAfterTests": true,
-    "reportPath": "build\\yaxunit-jUnit-result.xml"
+    "reportPath": "build\\yaxunit-jUnit-result.xml",
+    "exitCode" : "build\\yaxunit-exitCode"
 }

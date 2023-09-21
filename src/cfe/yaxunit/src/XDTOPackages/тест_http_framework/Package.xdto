@@ -1,0 +1,10 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://test.bellerage.com">
+	<import namespace="https://github.com/Daabramov/1c-http-framework"/>
+	<objectType name="тест_Схема">
+		<property name="field1" type="xs:string"/>
+		<property name="field2" type="xs:decimal"/>
+		<property name="field3" type="xs:boolean"/>
+		<property name="field4" type="xs:dateTime"/>
+		<property xmlns:d3p1="https://github.com/Daabramov/1c-http-framework" name="field5" type="d3p1:guid"/>
+	</objectType>
+</package>

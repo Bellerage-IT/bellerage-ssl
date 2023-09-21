@@ -17,5 +17,9 @@
   <content>CommonModule.бф_ХТТПСлужебный</content>
   <content>CommonModule.бф_СервисыОбщее</content>
   <content>XDTOPackage.ОбщегоНазначенияХТТП</content>
+  <content>CommonModule.бф_ФабрикаХТТП</content>
+  <content>CommonModule.бф_СервисыОбщееПереопределяемый</content>
+  <content>CommonModule.бф_ФабрикаХТТППовтИсп</content>
+  <content>CommonModule.бф_ФабрикаХТТППереопределяемый</content>
   <parentSubsystem>Subsystem.бф_СтандартныеПодсистемы</parentSubsystem>
 </mdclass:Subsystem>

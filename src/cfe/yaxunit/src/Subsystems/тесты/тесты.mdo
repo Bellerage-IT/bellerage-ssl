@@ -7,6 +7,16 @@
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
-  <content>CommonModule.тест_КоннекторХТТП</content>
-  <content>CommonModule.тест_ПроцессорКоллекций</content>
+  <content>CommonModule.ОМ_бф_КоннекторХТТП</content>
+  <content>CommonModule.ОМ_бф_ПроцессорыКоллекций</content>
+  <content>CommonModule.ОМ_бф_Пагинация</content>
+  <content>Catalog.тест_Справочник</content>
+  <content>InformationRegister.тест_РегистрДляПагинации</content>
+  <content>CommonModule.ОМ_бф_СервисыОбщее</content>
+  <content>CommonModule.ОМ_бф_РегулярныеВыраженияКлиентСервер</content>
+  <content>XDTOPackage.тест_http_framework</content>
+  <content>HTTPService.тест_ХТТПСервис</content>
+  <content>CommonModule.тест_КонтроллерХТТП</content>
+  <content>CommonModule.бф_СервисыОбщееПереопределяемый</content>
+  <content>CommonModule.ОМ_бф_ОбработкаHTTPЗапросов</content>
 </mdclass:Subsystem>

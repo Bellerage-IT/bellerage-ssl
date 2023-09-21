@@ -18,7 +18,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>Bellerage</vendor>
-  <version>1.0.0.1</version>
+  <version>1.0.2.1</version>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -52,6 +52,7 @@
   </languages>
   <subsystems>Subsystem.бф_СтандартныеПодсистемы</subsystems>
   <commonTemplates>CommonTemplate.бф_RegEx</commonTemplates>
+  <commonTemplates>CommonTemplate.бф_RegExBrowsers</commonTemplates>
   <commonModules>CommonModule.бф_ВосстановлениеXDTO</commonModules>
   <commonModules>CommonModule.бф_ВосстановлениеXDTOПереопределяемый</commonModules>
   <commonModules>CommonModule.бф_Кеширование</commonModules>
@@ -67,10 +68,14 @@
   <commonModules>CommonModule.бф_Пагинация</commonModules>
   <commonModules>CommonModule.бф_ПроцессорыКоллекций</commonModules>
   <commonModules>CommonModule.бф_ПроцессорыКоллекцийСлужебный</commonModules>
-  <commonModules>CommonModule.бф_РегулярныеВыражения</commonModules>
+  <commonModules>CommonModule.бф_РегулярныеВыраженияКлиентСервер</commonModules>
   <commonModules>CommonModule.бф_СервисыОбщее</commonModules>
+  <commonModules>CommonModule.бф_СервисыОбщееПереопределяемый</commonModules>
   <commonModules>CommonModule.бф_СобытияФорм</commonModules>
   <commonModules>CommonModule.бф_СобытияФормКлиент</commonModules>
+  <commonModules>CommonModule.бф_ФабрикаХТТП</commonModules>
+  <commonModules>CommonModule.бф_ФабрикаХТТППереопределяемый</commonModules>
+  <commonModules>CommonModule.бф_ФабрикаХТТППовтИсп</commonModules>
   <commonModules>CommonModule.бф_ХТТПСлужебный</commonModules>
   <xDTOPackages>XDTOPackage.ОбщегоНазначенияХТТП</xDTOPackages>
   <dataProcessors>DataProcessor.бф_МодельЗапроса</dataProcessors>

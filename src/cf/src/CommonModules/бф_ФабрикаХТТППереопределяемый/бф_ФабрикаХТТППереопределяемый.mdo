@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9ce6cbb1-4006-4a2f-9a73-2d8cf8aed56e">
+  <name>бф_ФабрикаХТТППереопределяемый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бф фабрика ХТТППереопределяемый</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>
